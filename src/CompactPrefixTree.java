@@ -41,9 +41,9 @@ public class CompactPrefixTree implements Dictionary {
     }
 
     /**
-     * Checks if a given prefix is stored in the dictionary
+     * Checks if a given prefix is a prefix of any word stored in the dictionary
      * @param prefix The prefix of a word
-     * @return true if the prefix is in the dictionary, false otherwise
+     * @return true if the prefix is a prefix of any word in the dictionary, false otherwise
      */
     public boolean checkPrefix(String prefix) {
         return checkPrefix(prefix.toLowerCase(), root); // Calling private checkPrefix method
